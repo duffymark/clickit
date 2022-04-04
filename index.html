@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <header>
+            <div class='wrapper'>
+                <ul class="navLinks">
+                    <li><a href="https://www.markduffy.ca" target="_blank">Who Built This?</a></li>
+                </ul>
+            </div>
+        </header>
+<section>       
+    <div class="wrapper">
+
+        <div class="gameStats">
+            <div>
+                <p>You have made <span id="clicks">0</span> clicks</p>
+            </div>
+            <div class="level">
+                <p>Difficulty Level</p>
+                <button class="easy" onclick="easy()">Easy</button>
+                <button class="medium" onclick="medium()">Medium
+                </button>
+                <button class="hard" onclick="hard()">Hard</button>
+            </div>
+        </div> <!-- end of game stats -->
+</section>
+<div class="wrapper">
+        <div class="gameBoard" onclick="pageClicks()">
+            <button class="gameBtn" id="changeColour">You Found It!</button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="footer">
+        <div class="wrapper">
+            <p>Created by <a href="https://github.com/duffymark" target="blank"
+                    aria-label="Go to Mark Duffy's Github">Mark Duffy</a> © 2022 </p>
+        </div>
+    </div>
+</footer>
+
+    <script src="app.js"> </script>
+</body>
+</html>
